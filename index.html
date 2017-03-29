@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>resize positioned</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="parentContainer" >
+			<section class="circle animated bounce" id="circle01"></section>
+			<section class="circle animated fadeInDown" id="circle02"></section>
+			<section class="circle animated fadeInLeft" id="circle03"></section>
+			<section class="circle animated rotateIn" id="circle04"></section>
+			<section class="circle animated zoomIn" id="circle05"></section>
+		</div>
+	</div>
+
+
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	<script src="resize_positioned.jQuery.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.parentContainer, .parentContainer1').resize_positioned({
+				maxWidth:1300,
+	    		maxHeight: 550
+		});
+	})
+	</script>
+</body>
+</html>

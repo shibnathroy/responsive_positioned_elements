@@ -1,0 +1,40 @@
+.container{
+	max-width: 1170px;
+	margin:20px auto 0 auto;
+}
+.parentContainer{	
+	background-color: #1E8DFF;
+	position:relative;
+	width: 900px;
+	height: 400px;
+}
+.circle{
+	width:200px;
+	height:200px;
+	background-color: #FFF;
+	position: absolute;
+	
+	-webkit-border-radius: 50%;
+	        border-radius: 50%;
+}
+#circle01{
+	left:5%;
+	top:10%;
+}
+#circle02{
+	bottom:10%;
+	left: 30%;
+}
+#circle03{
+	right:5%;
+	top:5%;
+}
+#circle04{
+	left:5%;
+	bottom: 10%;
+}
+
+#circle05{
+	left:50%;
+	top:50%;
+}
